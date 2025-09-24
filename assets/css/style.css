@@ -24,32 +24,86 @@ a {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .logo img {
   width: 30px;
 }
 
-ul {
+.navlinks {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
+  
 }
 
-ul li {
+.navlinks li {
   display: flex;
   padding: 0px 30px;
 }
 
-ul li a {
+.navlinks li a {
   font-size: 12px;
   color: #d3dad9;
 }
 
 .menu-icon {
   font-size: 25px;
+  margin-left: auto;
   display: none;
+  color: #d3dad9;
+}
+
+
+header {
+  min-height: 100vh; 
+  width: 100%;          
+  background: url(/assets/img/phone1.jpg) center/cover no-repeat;
+  color: #d3dad9;
+  padding-top: 70px;
+}
+
+
+@media (max-width: 900px) {
+
+  .navigation {
+    padding: 0 3rem;
+    justify-content: space-between;
+  }
+
+  nav .navlinks {
+    position: absolute;
+    align-items: first baseline;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.6s ease 0s;
+  }
+  
+  /* .logo{
+    display: none;
+  }
+   */
+  .navlinks li {
+    padding: 10px 50px;
+  }
+  
+  .navlinks li a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #d3dad9;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;   
+    right: 20px; 
+  }
 }
