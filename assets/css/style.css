@@ -37,7 +37,6 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  
 }
 
 .navlinks li {
@@ -57,18 +56,90 @@ a {
   color: #d3dad9;
 }
 
-
-header {
-  min-height: 100vh; 
-  width: 100%;          
-  background: url(/assets/img/phone1.jpg) center/cover no-repeat;
-  color: #d3dad9;
-  padding-top: 70px;
+/* header */
+/* header {
+  height: 85vh;
+  width: 100%;
+  background: url(/assets/img/phone4.jpg) center/cover no-repeat;
+  color: #ffff;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.ht {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+} */
+
+header {
+  width: 100%;
+  min-height: 85vh; 
+  background: url(/assets/img/phone4.jpg) center/cover no-repeat;
+  margin-top: 70px;
+  border-radius: 0 0 30px 30px;
+}
+
+.hcontainer, .subcontainer, .ht {
+  height: 45vh; 
+}
+
+.ht {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  justify-content: center; 
+  gap: 10px;
+  text-align: center;      
+  color: white;            
+}
+
+.ht h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.ht h4 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.ht p {
+  font-size: 1.3rem;
+  color: #eaf2f1;
+}
+
+.ht a {
+  color: white;
+  background-color: #0D92F4;
+  padding: 15px 25px;
+  border-radius: 30px;
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
+/* main  */
+main {
+  width: 100%;
+  min-height: 85vh; 
+  background: url(/assets/img/phone6.jpg) center/cover no-repeat;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.header3 {
+  width: 100%;
+  min-height: 85vh; 
+  background: url(/assets/img/phone3.jpg) center/cover no-repeat;
+  margin-top: 10px;
+  border-radius: 30px;
+}
 
 @media (max-width: 900px) {
-
   .navigation {
     padding: 0 3rem;
     justify-content: space-between;
@@ -85,7 +156,7 @@ header {
     background-color: rgba(0, 0, 0, 0.9);
     transition: all 0.6s ease 0s;
   }
-  
+
   /* .logo{
     display: none;
   }
@@ -93,7 +164,7 @@ header {
   .navlinks li {
     padding: 10px 50px;
   }
-  
+
   .navlinks li a {
     font-size: 1.5rem;
     font-weight: 700;
@@ -103,7 +174,7 @@ header {
   .menu-icon {
     display: block;
     position: absolute;
-    top: 20px;   
-    right: 20px; 
+    top: 20px;
+    right: 20px;
   }
 }
