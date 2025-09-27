@@ -29,3 +29,21 @@ document.querySelectorAll("#listmenu a").forEach((link) => {
     closeMenu();
   });
 });
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1.2, // 1 slide penuh + 0.2 ngintip slide berikutnya
+  spaceBetween: 20, // jarak antar slide
+  rewind: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
