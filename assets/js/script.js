@@ -1,23 +1,23 @@
 let listmenu = document.getElementById("listmenu");
 let bars = document.getElementById("bars");
 let xmark = document.getElementById("xmark");
-let logo = document.querySelector(".logo"); // ambil elemen logo
+let logo = document.querySelector(".logo");
 
 listmenu.style.maxHeight = "0px";
-xmark.style.display = "none"; // awalnya disembunyikan
+xmark.style.display = "none"; 
 
 function openMenu() {
-  listmenu.style.maxHeight = "100vh";
+  listmenu.style.maxHeight = listmenu.scrollHeight + "px"; 
   bars.style.display = "none";
   xmark.style.display = "inline-block";
-  logo.style.display = "none"; // sembunyikan logo
+  logo.style.visibility = "hidden"; 
 }
 
 function closeMenu() {
   listmenu.style.maxHeight = "0px";
   xmark.style.display = "none";
   bars.style.display = "inline-block";
-  logo.style.display = "block"; // tampilkan logo kembali
+  logo.style.visibility = "visible";
 }
 
 bars.addEventListener("click", openMenu);
@@ -25,14 +25,13 @@ xmark.addEventListener("click", closeMenu);
 
 // Tutup menu otomatis saat klik link (khusus mobile)
 document.querySelectorAll("#listmenu a").forEach((link) => {
-  link.addEventListener("click", () => {
-    closeMenu();
-  });
+  link.addEventListener("click", closeMenu);
 });
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1.2, // 1 slide penuh + 0.2 ngintip slide berikutnya
-  spaceBetween: 20, // jarak antar slide
+// Swiper
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 20,
   rewind: true,
   navigation: {
     nextEl: ".swiper-button-next",
