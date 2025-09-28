@@ -63,7 +63,6 @@ header {
   min-height: 85vh;
   background: url(/assets/img/phone4.jpg) center/cover no-repeat;
   margin-top: 70px;
-  border-radius: 0 0 30px 30px;
 }
 
 .hcontainer {
@@ -118,16 +117,14 @@ main {
   width: 100%;
   min-height: 85vh;
   background: url(/assets/img/phone6.jpg) center/cover no-repeat;
-  margin-top: 10px;
-  border-radius: 30px;
+  margin-top: 12px;
 }
 
 .header3 {
   width: 100%;
   min-height: 85vh;
   background: url(/assets/img/phone3.jpg) center/cover no-repeat;
-  margin-top: 10px;
-  border-radius: 30px;
+  margin-top: 12px;
 }
 
 /* galleri */
